@@ -10,7 +10,7 @@ class TestMe:
     def take_five(self):
         """Возвращает число 4"""
         return 4
-    
+
     """возвращает порт"""
     def port(self):
         """Возвращает значение порта"""
@@ -22,3 +22,4 @@ if __name__ == '__main__':
     with socketserver.TCPServer(("", PORT), Handler) as http:
         print("serving at port", PORT)
         http.serve_forever()
+
